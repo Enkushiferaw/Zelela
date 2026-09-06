@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Zelela Trading PLC</title>
+<meta name="description" content="Get in touch with Zelela Trading PLC for consulting, research, institutional, enterprise, or financial and compliance advisory services.">
+<link rel="canonical" href="https://www.zelelatrading.com/contact.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">Z</span>
+      <span class="brand-word">Zelela Trading<small>CONSULT · EMPOWER · TRANSFORM</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="consultants.html">Consultants</a>
+      <a href="projects.html">Projects</a>
+      <a href="insights.html">Insights</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="contact.html" class="btn btn-ghost btn-sm">Request a Consultation</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+      <h1>Let's start a conversation</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <div class="contact-info-card">
+          <h4>Phone</h4>
+          <p><a href="tel:+251910333692">+251 910 333 692</a></p>
+        </div>
+        <div class="contact-info-card">
+          <h4>Email</h4>
+          <p><a href="mailto:zelelatradingplc@gmail.com">zelelatradingplc@gmail.com</a></p>
+        </div>
+        <div class="contact-info-card">
+          <h4>Location</h4>
+          <p>Dessie, Ethiopia</p>
+        </div>
+      </div>
+
+      <div>
+        <form id="contact-form" novalidate>
+          <div class="honeypot" aria-hidden="true">
+            <label for="company_website">Leave this field empty</label>
+            <input type="text" id="company_website" name="company_website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form-grid">
+            <div class="field" data-field="fullName">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" name="fullName" required maxlength="120">
+              <span class="field-error"></span>
+            </div>
+            <div class="field" data-field="organization">
+              <label for="organization">Organization</label>
+              <input type="text" id="organization" name="organization" maxlength="150">
+              <span class="field-error"></span>
+            </div>
+            <div class="field" data-field="email">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required maxlength="150">
+              <span class="field-error"></span>
+            </div>
+            <div class="field" data-field="phone">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" maxlength="30">
+              <span class="field-error"></span>
+            </div>
+            <div class="field full" data-field="service">
+              <label for="service">Service Interested In *</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option>Socio-Economic &amp; Health Research</option>
+                <option>Public Health Strategy</option>
+                <option>Program Evaluation</option>
+                <option>Enterprise &amp; MSME Development</option>
+                <option>Institutional Development</option>
+                <option>Strategic Planning</option>
+                <option>Financial Management</option>
+                <option>Accounting &amp; Compliance</option>
+                <option>Audit Support</option>
+                <option>Asset Valuation &amp; Property Appraisal</option>
+                <option>Training &amp; Capacity Building</option>
+                <option>Other</option>
+              </select>
+              <span class="field-error"></span>
+            </div>
+            <div class="field full" data-field="subject">
+              <label for="subject">Subject *</label>
+              <input type="text" id="subject" name="subject" required maxlength="150">
+              <span class="field-error"></span>
+            </div>
+            <div class="field full" data-field="message">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="6" required maxlength="4000"></textarea>
+              <span class="field-error"></span>
+            </div>
+            <div class="checkbox-row field" data-field="consent">
+              <input type="checkbox" id="consent" name="consent" required>
+              <label for="consent">I agree to the <a href="privacy.html">Privacy Policy</a>.</label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="margin-top:22px; width:100%;">Send Message</button>
+          <div class="form-status" role="status" aria-live="polite"></div>
+        </form>
+
+        <div id="contact-success" hidden>
+          <div class="contact-info-card" style="border-color:var(--green);">
+            <h4>Thank you</h4>
+            <p style="font-weight:400; font-size:0.98rem; color:var(--ink-soft);">Your message has been successfully submitted to Zelela Trading PLC. A member of our team will review it and respond soon.</p>
+            <a href="index.html" class="btn btn-ghost btn-sm" style="margin-top:14px;">Return to Home</a>
+          </div>
+        </div>
+
+        <p style="margin-top:18px; font-size:0.8rem; color:var(--ink-soft);">
+          This form validates and simulates submission on the frontend. To deliver messages to
+          zelelatradingplc@gmail.com in production, connect it to a backend (Nodemailer/SMTP, Resend,
+          SendGrid or similar) — see README.md for the recommended architecture and environment variables.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="brand-word" style="color:#fff;">Zelela Trading PLC</span>
+        <p style="margin-top:10px;">Consult. Empower. Transform. Driving sustainable institutional growth, economic formalization, and social impact across East Africa.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="consultants.html">Consultants</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#research">Health &amp; Socio-Economic Research</a></li>
+          <li><a href="services.html#enterprise">Enterprise Development</a></li>
+          <li><a href="services.html#institutional">Institutional Advisory</a></li>
+          <li><a href="services.html#financial">Financial &amp; Compliance Assurance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+251910333692">+251 910 333 692</a></li>
+          <li><a href="mailto:zelelatradingplc@gmail.com">zelelatradingplc@gmail.com</a></li>
+          <li>Dessie, Ethiopia</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Zelela Trading PLC. All rights reserved.</span>
+      <span><a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="privacy.html#terms">Terms of Use</a></span>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
