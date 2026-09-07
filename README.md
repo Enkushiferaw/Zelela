@@ -35,10 +35,24 @@ zelela-trading/
 
 Consultant content lives in one place — the `CONSULTANTS` array at the top of
 `js/main.js` — and drives both the homepage carousel and the `/consultants`
-grid + modal. Edit names, qualifications, and expertise there; add a `photo`
-field pointing at a real headshot once photography is available, and update
-`slideMarkup()` / the grid renderer in `main.js` to use `<img>` instead of the
-initials avatar.
+grid + modal.
+
+### Adding consultant photos
+
+Each consultant record already has a `photo` field pointing at
+`images/consultants/<name>.png`. To add real photos:
+
+1. Drop your five PNG files into `images/consultants/`, named exactly:
+   `mulugeta.png`, `arega.png`, `seid.png`, `yosef.png`, `naod.png`.
+2. That's it — no code or format changes needed. PNG works fine (no need to
+   convert to JPG); JPG would also work if you rename the `photo` paths in
+   `js/main.js` to match.
+
+If a file is missing or fails to load, the site automatically falls back to
+the navy initials placeholder, so nothing breaks if you add photos one at a
+time. For best results, crop photos close to a 4:5 portrait ratio — the CSS
+uses `object-fit: cover` so slightly different crops still fill the frame
+cleanly, but a portrait-oriented source avoids awkward cropping.
 
 ## Contact form — wiring real email delivery
 
